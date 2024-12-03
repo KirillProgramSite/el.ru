@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <title>ЕЛЬЦИН.РУ</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="wrapper">
+                <div class="header__logo">Ельцин.ру</div>
+                <nav class="header__menu">
+                    <ul>
+                        <li><a href="#about">О личности</a></li>
+                        <li><a href="#biography">Биография</a></li>
+                        <li><a href="#policy">Политика</a></li>
+                        <li><a href="#person">Личность</a></li>
+                        <li><a href="#author">Об авторе</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="content">
+        <article class="hero">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="hero__text">
+                        <h1>Первый президент <span>новой России</span></h1>
+                        <p>Борис Ельцин — лидер, изменивший ход истории, открывший путь к демократии и свободе. Узнайте
+                            о человеке, чьи решения сформировали современную Россию.</p>
+                    </div>
+                    <div class="hero__img">
+                        <picture>
+                            <source srcset="img/hero-img-mob.png" media="(max-width: 426px)" />
+                            <img src="img/hero-img.png" alt="ельцин-фото" />
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="about" id="about">
+            <div class="container">
+                <h1>О ельцинe</h1>
+                <div class="wrapper">
+                    <div class="about__photo"><img src="img/person__photo.png" alt=""></div>
+                    <div class="about__text">
+                        <p><span>Борис Ельцин (1931–2007)</span> — первый президент Российской Федерации,
+                            сыгравший ключевую роль в переходе страны от советской системы к новой эпохе. Родился
+                            <span>1 февраля
+                                1931 года</span> в селе Бутка, Свердловская область, в семье рабочих. Образование
+                            получил в Уральском
+                            политехническом институте, после чего начал карьеру в строительстве, быстро продвигаясь по
+                            служебной лестнице.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="biography" id="biography">
+            <div class="container">
+                <h1>Биография ельцина</h1>
+
+                <div class="wrapper">
+                    <div class="biography__date">
+                        <p class="active" data-year="1985">1985</p>
+                        <p data-year="1990">1990</p>
+                        <p data-year="1991">1991</p>
+                        <p data-year="1993">1993</p>
+                        <p data-year="1999">1999</p>
+                    </div>
+                    <div class="biography__content">
+                        <div class="biography__content-el active" data-year="1985">
+                            <h2>Начало пути!</h2>
+                            <p>В Москве, заняв пост секретаря ЦК КПСС, начал борьбу с партийной бюрократией, открыто критикуя коррумпированную систему.</p>
+                            <img src="img/biography-img1.png" alt="">
+                        </div>
+                        <div class="biography__content-el" data-year="1990">
+                            <h2>Новые вершины</h2>
+                            <p>Ельцин становится председателем Верховного Совета РСФСР и выступает за суверенитет России, став символом перемен.</p>
+                            <img src="img/biography-img2.png" alt="">
+
+                        </div>
+                        <div class="biography__content-el" data-year="1991">
+                            <h2>ЕЛЬЦИНА В ПРЕЗИДЕНТЫ</h2>
+                            <p>Избран первым президентом России. Его решительное противостояние ГКЧП в августе 1991 года стало символом борьбы за свободу.</p>
+                            <img src="img/biography-img3.png" alt="">
+
+                        </div>
+                        <div class="biography__content-el" data-year="1993">
+                            <h2>“Перемен - требуют наши сердца”</h2>
+                            <p>Принятие новой Конституции утвердило демократические принципы управления страной.</p>
+                            <img src="img/biography-img4.png" alt="">
+
+                        </div>
+                        <div class="biography__content-el" data-year="1999">
+                            <h2>“я ухожу”</h2>
+                            <p>Ушел в отставку, мирно передав власть Владимиру Путину, оставив страну на пути реформ.</p>
+                            <img src="img/biography-img5.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="policy" id="policy">
+            <div class="container">
+                <h1>Политика ельцина</h1>
+                <div class="policy__wrapper">
+                    <div class="policy-el">
+                        <h2>Экономическая "шоковая терапия"</h2>
+                        <button onclick="openModal('modal1')">Читать</button>
+                    </div>
+                    <div class="policy-el">
+                        <h2>Приватизация</h2>
+                        <button onclick="openModal('modal2')">Читать</button>
+                    </div>
+                    <div class="policy-el">
+                        <h2>Децентрализация власти</h2>
+                        <button onclick="openModal('modal3')">Читать</button>
+                    </div>
+                    <div class="policy-el">
+                        <h2>Открытие страны миру</h2>
+                        <button onclick="openModal('modal4')">Читать</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                  <span class="close" onclick="closeModal('modal1')">&times;</span>
+                  <h2>Экономическая "шоковая терапия"</h2>
+                  <p>Шоковая терапия — это комплекс радикальных экономических реформ, направленных на переход от плановой экономики к рыночной. Основные элементы включали либерализацию цен, сокращение государственного регулирования и резкое снижение инфляции. Хотя эти меры способствовали становлению рыночной экономики, они привели к серьезным социальным трудностям, включая рост бедности и безработицы.</p>
+                </div>
+              </div>
+              
+              <div id="modal2" class="modal">
+                <div class="modal-content">
+                  <span class="close" onclick="closeModal('modal2')">&times;</span>
+                  <h2>Приватизация</h2>
+                  <p>Приватизация стала ключевой частью экономических реформ 1990-х годов, предполагая передачу государственной собственности в частные руки. Целью было создание эффективного частного сектора, однако процесс сопровождался коррупцией и появлением олигархов. Итогом стало перераспределение богатств и формирование крупного частного капитала.</p>
+                </div>
+              </div>
+              
+              <div id="modal3" class="modal">
+                <div class="modal-content">
+                  <span class="close" onclick="closeModal('modal3')">&times;</span>
+                  <h2>Децентрализация власти</h2>
+                  <p>Децентрализация власти предусматривала передачу части полномочий от центрального правительства региональным и местным органам власти. Это позволило регионам принимать больше решений самостоятельно, однако также создало риски неравномерного развития и усилило влияние местных элит на политическую систему.</p>
+                </div>
+              </div>
+              
+              <div id="modal4" class="modal">
+                <div class="modal-content">
+                  <span class="close" onclick="closeModal('modal4')">&times;</span>
+                  <h2>Открытие страны миру</h2>
+                  <p>Открытие страны миру подразумевало интеграцию в международную экономику через снятие торговых барьеров, привлечение иностранных инвестиций и участие в глобальных рынках. Это привело к притоку технологий и капиталов, но также усилило конкуренцию, что осложнило положение местных производителей.</p>
+                </div>
+              </div>
+              
+        </article>
+        <article class="person" id="person">
+            <div class="container">
+                <h1>Личность ельцина</h1>
+                <p>Борис Ельцин — личность, о которой трудно говорить однозначно. Он воплощал в себе стремление к свободе, силу воли и
+                    готовность идти на риск ради будущего страны. История его жизни — это путь от скромного инженера до первого
+                    президента России, который навсегда изменил ход её развития.</p>
+                <div class="person__wrapper">
+                    <div class="person-el">
+                        <h2>Смелость в решающие моменты</h2>
+                        <p>Кто ещё мог встать на танк в августе 1991 года и бросить вызов путчистам? Этот момент стал символом новой России, а
+                            сам Ельцин — её защитником. Он показал, что лидер — это не только власть, но и готовность рисковать ради свободы
+                            народа.</p>
+                    </div>
+                    <div class="person-el">
+                        <h2>Близкий к народу</h2>
+                        <p>Ельцин всегда старался быть "своим" для каждого россиянина. Он не скрывал своих слабостей и общался с людьми открыто,
+                            что делало его простым и понятным. Люди видели в нём не только политика, но и человека с реальными переживаниями,
+                            который искренне хотел лучшего будущего для своей страны.</p>
+                    </div>
+                    <div class="person-el">
+                        <h2>Смелость в решающие моменты</h2>
+                        <p>Да, его решения были смелыми и часто противоречивыми. Переход к рыночной экономике, Конституция 1993 года, курс на
+                            демократию — всё это было новым и сложным, но именно благодаря этим реформам Россия сделала шаг к современности.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="author" id="author">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="author__text">
+                        <h1>Об авторе</h1>
+                        <p>Разработал дизайн, собрал интересную и нужную информацию и сделал сайт студент ЦОС24Сиса <span>Проскурин Кирилл
+                            Александрович</span></p>
+                        
+                        <p>Если сайт вам понравился, можете скинуть сайт своим друзьям и коллегам, так больше узнают какие крутые студенты
+                            учаться у нас</p>
+
+                        <div class="tg">
+                        <a href="https://t.me/webkkkir">
+                            <img src="img/tg.svg" alt="">
+                            Телеграмм-канал с моей работой по Web-разработке
+                        </a>
+                        </div>
+                    </div>
+                    <div class="author__img">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
